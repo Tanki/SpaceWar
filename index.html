@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>SpaceWar - Mobile game</title>
+	<script src="lib/phaser.min.js"></script>
+    <script src="src/preloader.js"></script>
+    <script src="src/mainMenu.js"></script>
+    <script src="src/game.js"></script>
+    <script src="src/gameOver.js"></script>
+	<style>
+		body{ margin: 0; }
+	</style>
+</head>
+	<body>
+
+		<div id="SpaceWar"></div>
+
+		<script type="text/javascript">
+			window.onload = function() {
+
+				var game = new Phaser.Game("100", "100", Phaser.CANVAS, 'SpaceWar');
+
+				game.state.add('Preloader', SpaceWar.Preloader);
+				game.state.add('MainMenu', SpaceWar.MainMenu);
+				game.state.add('Game', SpaceWar.Game);
+				game.state.add('GameOver', SpaceWar.GameOver);
+
+				game.state.start('Preloader');
+			};
+		</script>
+	</body>
+</html>
