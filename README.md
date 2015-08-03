@@ -1,2 +1,2 @@
 # SpaceWar
-Creating an HTML5 game with phaser framework
+Creating an HTML5 game in javascript with phaser framework
