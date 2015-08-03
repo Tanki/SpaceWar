@@ -48,9 +48,9 @@ SpaceWar.Game.prototype = {
 	 * Set the value of "outOfBoundsKill" to true on a sprite when it is called
 	 */
 	killOnOutOfBounds: function(sprite)
-    {
-        sprite.outOfBoundsKill = true;
-    },
+    	{
+        	sprite.outOfBoundsKill = true;
+    	},
 
 	/*
 	 * Generates a random position (Y) between -150 and -400 (for asteorids)
